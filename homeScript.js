@@ -99,3 +99,7 @@ addEventListener("scroll", (event) => {
 
     }
 });
+
+document.getElementById("store").addEventListener("click", function () {
+    window.location.href = "shop.html";
+})

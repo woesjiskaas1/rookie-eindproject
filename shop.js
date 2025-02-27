@@ -391,3 +391,6 @@ document.getElementById("bestel").addEventListener("click", () => {
         maincard.removeChild(maincard.firstChild);
     }
 })
+document.getElementById("home").addEventListener("click", function () {
+    window.location.href = "index.html";
+})
