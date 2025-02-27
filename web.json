@@ -1,0 +1,286 @@
+{
+    "recomendations": [
+        {
+            "img": "img/Serfaus.jpg",
+            "div": {
+                "h1": "Serfaus - Fiss - Ladis",
+                "p": "Serfaus-Fiss-Ladis is een van de populairste wintersportgebieden in Oostenrijk. Met 214 kilometer aan pistes biedt het een geweldige mix van blauwe, rode en zwarte afdalingen, geschikt voor elk niveau skiër of snowboarder. Moderne liften zorgen voor snelle toegang tot de pistes, terwijl de zonnige ligging en spectaculaire uitzichten het gebied extra aantrekkelijk maken. Families waarderen de kindvriendelijke faciliteiten, zoals skischolen en kinderlanden. Voor liefhebbers van actie zijn er funparken, freeride-mogelijkheden en rodelbanen. Na een dag op de pistes geniet je van levendige après-ski in een van de gezellige bars.",
+                "button": "book"
+            }
+        },
+        {
+            "img": "img/skiliftkarussellwebp.webp",
+            "div": {
+                "h1": "Skiliftkarussell Winterberg",
+                "p": "De Skiliftkarussell bij Winterberg is veruit het grootste en meest bekende samenhangende skigebied van het Sauerland. Wanneer de sneeuw goed is komen er duizenden wintersporters naar Winterberg om te genieten van de glooiende hellingen van het Sauerland. Er is de laatste decennia zoveel geïnvesteerd in de liften en infrastructuur van Winterberg dat sommige gebieden in de Alpen er jaloers naar kijken. Geen wonder dat je hier erg veel Nederlanders tegenkomt, en dat je vaak even in de rij staat te wachten.",
+                "button": "book"
+            }
+        },
+        {
+            "img": "img/saalbach-hinterglemm.webp",
+            "div": {
+                "h1": "Saalbach Hinterglemm Leogang Fieberbrunn",
+                "p": "Een van de bekendste skigebieden van Oostenrijk is Saalbach Hinterglemm Leogang Fieberbrunn. Het is enorm populair bij Nederlandse wintersporters, en dat is niet zonder reden. Het skigebied is veelzijdig, de dorpen zijn gezellig, en de après-ski is zo uitbundig dat je je de volgende dag afvraagt of die laatste paar biertjes wel zo’n goed idee waren. De toevoeging van Fieberbrunn heeft het gebied nog aantrekkelijker gemaakt. Dankzij de gevarieerde pistes en moderne liften is het een paradijs voor wintersporters van elk niveau. Geen wonder dat Nederlanders hier steeds weer terugkomen!",
+                "button": "book"
+            }
+        },
+        {
+            "img": "img/zillertalarena.webp",
+            "div": {
+                "h1": "Zillertal Arena",
+                "p": "De Zillertal Arena is populair bij Nederlanders en heeft veel Nederlandse skileraren. Het langgerekte skigebied van zo’n 20 km verbindt Zell am Ziller en Gerlos in Tirol met Königsleiten en Krimml in het Salzburgerland. Het gebied ligt deels in het Zillertal en deels in een zijdal. Hoewel de pistes gevarieerd zijn, is het maken van tochten minder ideaal door drukke en soms lange verbindingsstukken en liften. Wie het hele gebied wil verkennen, moet daar in het hoogseizoen voldoende tijd voor uittrekken. Ondanks dit blijft de Zillertal Arena een aantrekkelijke bestemming dankzij de moderne liften, sneeuwzekerheid en veelzijdigheid voor wintersporters van elk niveau.",
+                "button": "book"
+            }
+        },
+        {
+            "img": "img/39678.webp",
+            "div": {
+                "h1": "Sölden - Ötztal Arena",
+                "p": "Het skigebied van Sölden is opgedeeld in drie delen: de Gaislachkogl, de Giggijoch en de gletsjers. De Gaislachkogl biedt uitdagende pistes en freeride-mogelijkheden. De Giggijoch is perfect voor beginners, met brede pistes en een funpark. Hoogtepunten zijn de Rettenbach- en Tiefenbachgletsjer. De Rettenbach heeft een pittige FIS-afdaling, terwijl de Tiefenbach een ultrabreed en glooiend gletsjerplateau biedt. Skiërs en snowboarders van elk niveau vinden hier voldoende variatie, al zijn de dalafdalingen vaak uitdagend. Voor rustige pistes is de Gaislachalm een goed alternatief. Sölden combineert veelzijdigheid en sneeuwzekerheid, waardoor het een topbestemming blijft.",
+                "button": "book"
+            }
+        }
+    ],
+    "store": [
+        {
+            "country": "Oostenrijk",
+            "sport": "skien",
+            "mensen": "20",
+            "transport": "auto",
+            "prijs": "424",
+            "amount": 3,
+            "card": {
+                "img": "img/zillertalarena.webp",
+                "text-right": [
+                    {
+                        "h1": "Zillertal Arena"
+                    },
+                    {
+                        "p": "150km"
+                    },
+                    {
+                        "div": {
+                            "img": "https://flagcdn.com/at.svg",
+                            "p": "tirol, Oostenrijk"
+                        }
+                    },
+                    {
+                        "h3": "De Zillertal Arena is populair bij Nederlanders en heeft veel skileraren uit Nederland. Het gebied verbindt Zell am Ziller, Gerlos, Königsleiten en Krimml. Ondanks drukke verbindingsstukken blijft het aantrekkelijk door moderne liften, sneeuwzekerheid en veelzijdige pistes voor wintersporters."
+                    }
+                ],
+                "text-left": [
+                    {
+                        "p": "p.p. vanaf*"
+                    },
+                    {
+                        "h2": "€424,-"
+                    },
+                    {
+                        "h4": "sport: skien"
+                    },
+                    {
+                        "h4": "mensen: 0-20 "
+                    },
+                    {
+                        "h4": "transport: auto "
+                    },
+                    {
+                        "button": "book"
+                    }
+                ]
+            }
+        },
+        {
+            "country": "Oostenrijk",
+            "sport": "skien",
+            "mensen": "20",
+            "transport": "bus",
+            "prijs": "360",
+            "amount": 3,
+            "card": {
+                "img": "img/Serfaus.jpg",
+                "text-right": [
+                    {
+                        "h1": "Serfaus - Fiss - Ladis"
+                    },
+                    {
+                        "p": "186km"
+                    },
+                    {
+                        "div": {
+                            "img": "https://flagcdn.com/at.svg",
+                            "p": "tirol, Oostenrijk"
+                        }
+                    },
+                    {
+                        "h3": "Serfaus-Fiss-Ladis is populair door 214 kilometer aan pistes, geschikt voor alle niveaus. Moderne liften bieden snelle toegang, terwijl de zonnige ligging en mooie uitzichten extra aantrekkingskracht geven. Families waarderen de kindvriendelijke faciliteiten, en actievelingen genieten van funparken en rodelbanen. Après-ski kan in de gezellige bars na een actieve dag."
+                    }
+                ],
+                "text-left": [
+                    {
+                        "p": "p.p. vanaf*"
+                    },
+                    {
+                        "h2": "€360,-"
+                    },
+                    {
+                        "h4": "sport: snowboard"
+                    },
+                    {
+                        "h4": "mensen: 0-20 "
+                    },
+                    {
+                        "h4": "transport: bus "
+                    },
+                    {
+                        "button": "book"
+                    }
+                ]
+            }
+        },
+        {
+            "country": "Oostenrijk",
+            "sport": "skien",
+            "mensen": "15",
+            "transport": "auto",
+            "prijs": "399",
+            "amount": 3,
+            "card": {
+                "img": "img/saalbach-hinterglemm.webp",
+                "text-right": [
+                    {
+                        "h1": "Saalbach Hinterglemm Leogang Fieberbrunn"
+                    },
+                    {
+                        "p": "270km"
+                    },
+                    {
+                        "div": {
+                            "img": "https://flagcdn.com/at.svg",
+                            "p": "Salzburgerland, Oostenrijk"
+                        }
+                    },
+                    {
+                        "h3": "Saalbach Hinterglemm Leogang Fieberbrunn is populair bij Nederlanders. Het skigebied biedt veelzijdige pistes, gezellige dorpen en uitbundige après-ski. Met de toevoeging van Fieberbrunn is het gebied nog aantrekkelijker geworden. Moderne liften en variatie maken het geschikt voor elk niveau wintersporter. Geen verrassing dat velen hier graag terugkeren!"
+                    }
+                ],
+                "text-left": [
+                    {
+                        "p": "p.p. vanaf*"
+                    },
+                    {
+                        "h2": "399,-"
+                    },
+                    {
+                        "h4": "sport: skien"
+                    },
+                    {
+                        "h4": "mensen: 0-15 "
+                    },
+                    {
+                        "h4": "transport: auto "
+                    },
+                    {
+                        "button": "book"
+                    }
+                ]
+            }
+        },
+        {
+            "country": "Oostenrijk",
+            "sport": "snowboarden",
+            "mensen": "10",
+            "transport": "auto",
+            "prijs": "299",
+            "amount": 3,
+            "card": {
+                "img": "img/39678.webp",
+                "text-right": [
+                    {
+                        "h1": "Sölden - Ötztal Arena"
+                    },
+                    {
+                        "p": "146km"
+                    },
+                    {
+                        "div": {
+                            "img": "https://flagcdn.com/at.svg",
+                            "p": "tirol, Oostenrijk"
+                        }
+                    },
+                    {
+                        "h3": "Sölden biedt veelzijdigheid met drie skigebieden: Gaislachkogl, Giggijoch en de gletsjers. De Gaislachkogl heeft uitdagende pistes, terwijl de Giggijoch ideaal is voor beginners. Hoogtepunten zijn de Rettenbach- en Tiefenbachgletsjer, met een FIS-afdaling en brede pistes. Voor rustige afdalingen is de Gaislachalm perfect. Sölden staat bekend om sneeuwzekerheid en variatie."
+                    }
+                ],
+                "text-left": [
+                    {
+                        "p": "p.p. vanaf*"
+                    },
+                    {
+                        "h2": "299,-"
+                    },
+                    {
+                        "h4": "sport: snowboard"
+                    },
+                    {
+                        "h4": "mensen: 0-10 "
+                    },
+                    {
+                        "h4": "transport: auto "
+                    },
+                    {
+                        "button": "book"
+                    }
+                ]
+            }
+        },
+        {
+            "country": "Oostenrijk",
+            "sport": "langlaufen",
+            "mensen": "2",
+            "transport": "auto",
+            "prijs": "199",
+            "amount": 3,
+            "card": {
+                "img": "img/foto-4-_-fotograf_-frank-drechsel.webp",
+                "text-right": [
+                    {
+                        "h1": "Kleinwalsertal - Oberstdorf"
+                    },
+                    {
+                        "p": "130km"
+                    },
+                    {
+                        "div": {
+                            "img": "https://flagcdn.com/at.svg",
+                            "p": "Vorarlberg, Oostenrijk"
+                        }
+                    },
+                    {
+                        "h3": "Kleinwalsertal - Oberstdorf biedt langlaufers 130 kilometer aan loipes in een prachtig berglandschap. Klassieke en skatingroutes variëren van makkelijk tot uitdagend. Populaire loipes, zoals de Schwendeloipe, bieden schitterende uitzichten. Dankzij de hoge ligging en sneeuwzekerheid genieten langlaufers hier van rust, natuur en een sportieve uitdaging."
+                    }
+                ],
+                "text-left": [
+                    {
+                        "p": "p.p. vanaf*"
+                    },
+                    {
+                        "h2": "199,-"
+                    },
+                    {
+                        "h4": "sport: langlaufen"
+                    },
+                    {
+                        "h4": "mensen: 0-2 "
+                    },
+                    {
+                        "h4": "transport: auto "
+                    },
+                    {
+                        "button": "book"
+                    }
+                ]
+            }
+        }
+    ]
+}

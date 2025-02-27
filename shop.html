@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webstore</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleshop.css">
+    <script defer src="shop.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a class="closebtn" id="winkelwagenClose">&times;</a>
+        <h1>winkelwagen</h1>
+        <div class="winkelwageninhoud-order">
+            <div class="winkelwagenInhoud">
+            </div>
+            <button class="bestel-button" id="bestel">BESTEL</button>
+        </div>
+    </div>
+    <!------------------------ hero------------------------>
+    <div class="hero-image shown">
+        <div class="hero-text shown">
+            <span class="hero-text-top">the</span>
+            <span class="hero-text-middel">traveller</span>
+        </div>
+    </div>
+    <!---------------------------------- navbar-------------------------------->
+    <ul class="navbar">
+        <span class="left">
+            <button class="profielbutton" href="homepage.html">
+                <img src="img/house-1110868_1920.png" alt="buttonpng" class="profileLogo" style="transform: scaleX(1)">
+            </button>
+            <button class="profielbutton">
+                <img src="img/globe-4442470_1920.png" alt="buttonpng" class="profileLogo" style="transform: scaleX(1)">
+            </button>
+        </span>
+        <span class="middle">
+            <input type="text" placeholder="zoeken..." style="transform: scaleX(1)">
+        </span>
+        <span class="right">
+            <button class="profielbutton" id="shopping-cart">
+                <img src="img/shopping-cart-1105049_1920.png" alt="buttonpng" class="profileLogo"
+                    style="transform: scaleX(-1)">
+            </button>
+            <div class="menu-item">
+                <button class="profielbutton">
+                    <img src="img/person-1824144_1920.png" alt="buttonpng" class="profileLogo"
+                        style="transform: scaleX(-1)">
+                </button>
+                <ul>
+                    <li><a href="">iets</a></li>
+                    <li><a href="">profile</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a href="admin.html">admin</a></li>
+                </ul>
+            </div>
+        </span>
+    </ul>
+    <!----------------------------oostenrijkpage---------------------------->
+    <div class="alles">
+        <div class="side">
+            <div class="side-nav-fade"></div>
+            <div class="side-nav">
+                <div class="section">
+                    <div class="nav-button" style="display: flex; flex-direction: row;" id="filterbutton">
+                        <h3>landen</h3>
+                        <button data-button="land">
+                            <i class="filterselect arrow down" id="filterarrow"></i>
+                        </button>
+                    </div>
+                    <hr style="margin-left: -20px;">
+                    <form id="filterform">
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="Oostenrijk" data-soort="-">
+                                <span class="checkmark"></span>
+                                Oostenrijk</label>
+
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="Zwitserland" data-soort="-">
+                                <span class="checkmark"></span>
+                                Zwitserland</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="Frankrijk" data-soort="-">
+                                <span class="checkmark"></span>
+                                Frankrijk</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="nav-button" style="display: flex; flex-direction: row;" id="filterbutton">
+                        <h3>activiteiten</h3>
+                        <button data-button="activiteiten">
+                            <i class="arrow down filterselect" id="filterarrow"></i>
+                        </button>
+                    </div>
+                    <hr style="margin-left: -20px;">
+                    <form id="filterform">
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="skien" data-soort="-">
+                                <span class="checkmark"></span>
+                                skien</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="snowboarden" data-soort="-">
+                                <span class="checkmark"></span>
+                                snowboarden</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="langlaufen" data-soort="-">
+                                <span class="checkmark"></span>
+                                langlaufen</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="nav-button" style="display: flex; flex-direction: row;" id="filterbutton">
+                        <h3>mensen</h3>
+                        <button data-button="mensen"><i class="arrow down filterselect" id="filterarrow"></i></button>
+                    </div>
+
+                    <hr style="margin-left: -20px;">
+                    <form id="filterform">
+                        <input type="number" class="rangeInputNumber" placeholder="2">
+                        <input type="range" min="1" max="20" value="2" class="slider" id="myRange">
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="nav-button" style="display: flex; flex-direction: row;" id="filterbutton">
+                        <h3>transport</h3>
+                        <button data-button="transport"><i class="arrow down filterselect"
+                                id="filterarrow"></i></button>
+                    </div>
+
+                    <hr style="margin-left: -20px;">
+                    <form id="filterform">
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="vliegtuig" data-soort="-">
+                                <span class="checkmark"></span>
+                                vliegtuig</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="bus" data-soort="-">
+                                <span class="checkmark"></span>
+                                bus</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="auto" data-soort="-">
+                                <span class="checkmark"></span>
+                                auto</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="nav-button" style="display: flex; flex-direction: row;" id="filterbutton">
+                        <h3>prijs</h3>
+                        <button data-button="prijs"><i class="arrow down filterselect" id="filterarrow"></i></button>
+                    </div>
+
+                    <hr style="margin-left: -20px;">
+                    <form id="filterform">
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="200" data-soort="prijs">
+                                <span class="checkmark"></span>
+                                €0 - €200</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="400" data-soort="prijs">
+                                <span class="checkmark"></span>
+                                €200 - €400</label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                <input type="checkbox" data-item="600" data-soort="prijs">
+                                <span class="checkmark"></span>
+                                €400 - €600</label>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-shop">
+            <div class="tussenstuk"></div>
+            <div class="store">
+                
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

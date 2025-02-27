@@ -1,0 +1,499 @@
+/* ----------store---------- */
+.alles {
+  display: flex;
+  flex-direction: row;
+}
+
+.store {
+  display: flex;
+}
+
+.tussenstuk {
+  width: 100%;
+}
+
+.side {
+  width: 15%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.side-nav {
+  display: flex;
+  background-color: #c5d3ff;
+  height: 100%;
+  flex-direction: column;
+}
+
+.side-nav-fade {
+  background: linear-gradient(rgba(7, 25, 85), rgba(197, 211, 255));
+  height: 30px;
+}
+
+.right-shop {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+
+input[type="checkbox"] {
+  background-color: purple;
+  border: 0px;
+}
+
+/* ------------------checkboxes----------------- */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  animation-name: checkking;
+  animation-duration: 1s;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@keyframes checkking {
+  0% {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+  }
+}
+
+/* -------------- */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: 0.5s all ease-in-out;
+
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.5s all ease-in-out;
+}
+
+.nav-button>button {
+  background-color: inherit;
+  margin-left: 10px;
+}
+
+.nav-button>button:hover {
+  cursor: pointer;
+}
+
+.nav-button {
+  height: 40px;
+}
+
+/* ------------custom slider----------------------- */
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 25px;
+  margin-left: -10px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #071955;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rangeInputNumber {
+  width: 25%;
+  border-radius: 25px;
+  border: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------- */
+.card {
+  height: 300px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.right-shop>hr {
+  width: 80%;
+  margin-top: 25px;
+}
+
+.card>img {
+  width: 35%;
+  border-radius: 25px;
+  object-fit: cover
+}
+
+.text-right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-right>p {
+  margin-top: -20px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 0px 25px 0px 25px;
+  border: 2px black solid;
+  border-radius: 25px;
+}
+
+.text-left>p {
+  color: gray;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.text-left>h2 {
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(7, 25, 85);
+  margin: 5px;
+}
+
+.text-left>h4 {
+  margin: 15px 10px 15px 10px;
+}
+
+.text-right>h3 {
+  font-weight: normal;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.text-right>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+
+}
+
+.text-right>div>img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.text-right>div>p {
+  color: darkslategrey;
+}
+
+.card {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 920px) {
+  .text-right>h3 {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .text-right>h3 {
+    font-size: 9px;
+  }
+}
+
+/* ---------------shopping cart------------------------ */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(228, 228, 228, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .cardWagen-center {
+    margin: 0px
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .cardWagen-center {
+
+    margin: 0px;
+  }
+
+}
+
+.winkelwagenInhoud {
+  width: 100%;
+  height: 80%;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.winkelwageninhoud-order {
+  margin-bottom: 30%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.bestel-button {
+  background-color: #04AA6D;
+  margin-top: 15px;
+  padding: 15px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.bestel-button:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 102, 29);
+}
+.sidenav>h1 {
+  margin-top: -55px
+}
+
+.cardWagen {
+  font-size: 12.5px;
+  width: 90%;
+  /* border: 2px black solid; */
+  display: flex;
+  justify-content: space-evenly
+}
+
+.cardWagen-left>div>p {
+  margin-left: 5px;
+}
+
+.cardWagen-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardWagen-left>div>img {
+  width: 12px;
+  height: 10px;
+}
+
+.cardWagen-left>div {
+  margin-top: -15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardWagen-center {
+  margin: 0 7px 0 7px;
+  display: flex;
+  align-items: center;
+}
+
+.cardWagen-right {
+  display: flex;
+  align-items: center;
+}
+
+.cardWagen-right>a {
+  color: red;
+}
+
+.cardWagen-right>a:hover {
+  color: rgb(100, 0, 0);
+}
+
+.text-left>button:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 1px black;
+}
+
+.text-left>button {
+  transition: all 0.2s ease-in-out;
+}

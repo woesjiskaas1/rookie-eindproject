@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webstore</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adminstyle.css">
+    <script defer src="admin.js"></script>
+</head>
+
+<body>
+    <!------------------------ hero------------------------>
+    <div class="hero-image shown">
+        <div class="hero-text shown">
+            <span class="hero-text-top">the</span>
+            <span class="hero-text-middel">traveller</span>
+            <span class="hero-text-bottom">admin</span>
+        </div>
+    </div>
+    <!---------------------------------- navbar-------------------------------->
+    <ul class="navbar">
+        <span class="left">
+            <button class="profielbutton" href="homepage.html">
+                <img src="img/house-1110868_1920.png" alt="buttonpng" class="profileLogo" style="transform: scaleX(1)">
+            </button>
+            <button class="profielbutton" href="shop.html">
+                <img src="img/globe-4442470_1920.png" alt="buttonpng" class="profileLogo" style="transform: scaleX(1)">
+            </button>
+        </span>
+        <span class="middle">
+            <button id="bestellingen">bestellingen</button>
+            <button id="productsNutton">producten</button>
+        </span>
+        <span class="right">
+            <button class="profielbutton">
+                <img src="img/shopping-cart-1105049_1920.png" alt="buttonpng" class="profileLogo"
+                    style="transform: scaleX(-1)">
+            </button>
+            <div class="menu-item">
+                <button class="profielbutton">
+                    <img src="img/person-1824144_1920.png" alt="buttonpng" class="profileLogo"
+                        style="transform: scaleX(-1)">
+                </button>
+                <ul>
+                    <li><a href="">iets</a></li>
+                    <li><a href="">profile</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a href="">admin</a></li>
+                </ul>
+            </div>
+        </span>
+    </ul>
+    <!-- ----------------admin------------------- -->
+    <div class="tussenstuk-admin"></div>
+    <div class="main-container" style="width: 100%; height: 100%; display: flex; justify-content: center;">
+        <div class="bestelling">
+            <table id="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>Datum en Tijd</th>
+                </tr>
+
+            </table>
+        </div>
+        <div class="products">
+            <div class="edit-json">
+                <div class="json-button read-json" id="readJson"><button>lees json</button></div>
+                <div class="json-button write-json"><button id="writeButton">schrijf json</button></div>
+            </div>
+            <div>
+                <table class="products-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Naam</th>
+                        <th>prijs</th>
+                        <th>afbeelding</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div id="overlay">
+        <a class="closebtn" id="overlayClose">&times;</a>
+        <div class="editerea" id="editerea">
+
+        </div>
+        <button class="completeEdit" id="completeEdit">save</button>
+    </div>
+    <div id="overlayAdd">
+        <a class="closebtn" id="overlayAddClose">&times;</a>
+        <div class="editerea" id="editerea">
+            <div id="addCard" class="card">
+                <form method="post" style="width: 400px; height: 300px;">
+                    <img src="img\no-image.jpg" class="templateExample" id="image">
+                    <input type="file" class="picture-upload" id="picture-upload-Example" multiple style="opacity: 0;">
+                </form>
+                <div class="text-right">
+                    <input type="text" placeholder="plek" class="inputname inputer" id="nameExample">
+                    <input type="text" placeholder="hoeveelheid pistes" class="inputpiste inputer" id="pistesExample">
+                    <div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="img\no-image.jpg" alt="country" id="flagExample" class="inputflag">
+                            </button>
+    
+                            <div class="dropdown-content">
+                                <a class="dropdown-itemExample" data-select-country="at">
+                                    <img src="https://flagcdn.com/at.svg" class="dropdown-item-image" width="20"
+                                        height="15"> Oostenrijk</a>
+                                <a class="dropdown-itemExample" data-select-country="fr">
+                                    <img src="https://flagcdn.com/fr.svg" class="dropdown-item-image" width="20"
+                                        height="15"> Frankrijk</a>
+                                <a class="dropdown-itemExample" data-select-country="ch">
+                                    <img src="https://flagcdn.com/ch.svg" class="dropdown-item-image" width="20"
+                                        height="15"> Zwitserland</a>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="deelstaat,land" class="inputlocation inputer" id="locationExample">
+                    </div>
+                    <textarea name="inputdescription" id="inputdescriptionExample" class="inputdescription inputer"
+                        placeholder="beschrijving over gebied Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ut tenetur molestiae. Fugit est harum aliquam sunt deleniti consectetur saepe ipsa pariatur architecto cumque voluptatibus optio placeat, praesentium similique quam."></textarea>
+                </div>
+                <div class="text-left">
+                    <p>p.p. vanaf*</p>
+                    <input type="text" name="inputprijs" id="inputpijs" class="inputpijs inputer" placeholder="prijs">
+                    <h4>sport: <input type="text" name="inputsport" id="inputsportExample" class="input inputer" placeholder="sport">
+                    </h4>
+                    <h4>mensen: <input type="text" name="inputmensen" id="inputmensenExample" class="input inputer" placeholder="mensen">
+                    </h4>
+                    <h4>transport: <input type="text" name="inputauto" id="inputautoExample" class="input inputer" placeholder="transport">
+                    </h4><button>book</button>
+                </div>
+            </div>
+            <div class="extra-detail-add">
+                <label for="country">Land</label>
+                <input type="text" name="country" class="extraInput">
+                <label for="sport">Sport</label>
+                <input type="text" name="sport" class="extraInput">
+                <label for="mensen">Mensen</label>
+                <input type="number" name="mensen" class="extraInput">
+                <label for="transport">Transport</label>
+                <input type="text" name="transport" class="extraInput">
+                <label for="prijs">Prijs</label>
+                <input type="number" name="prijs" class="extraInput">
+                <label for="amount">Voorraad</label>
+                <input type="number" name="amount" class="extraInput">
+            </div>
+            <h2 class="pointer" id="addnext">&#8680;</h2>
+            <button class="completeAdd" id="completeAdd">completeAdd</button>
+        </div>
+    </div>
+    <template>
+        <div id="hi-me" class="card">
+            <form method="post" style="width: 400px; height: 300px;">
+                <img src="img/zillertalarena.webp" class="template" id="image">
+                <input type="file" class="picture-upload" id="picture-upload" multiple style="opacity: 0;">
+            </form>
+            <div class="text-right">
+                <input type="text" placeholder="Zillertal Arena" class="inputname inputer" id="name">
+                <input type="text" placeholder="" class="inputpiste inputer" id="pistes">
+                <div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <img src="https://flagcdn.com/at.svg" alt="country" id="flag" class="inputflag">
+                        </button>
+
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" data-select-country="at">
+                                <img src="https://flagcdn.com/at.svg" class="dropdown-item-image" width="20"
+                                    height="15"> Oostenrijk</a>
+                            <a class="dropdown-item" data-select-country="fr">
+                                <img src="https://flagcdn.com/fr.svg" class="dropdown-item-image" width="20"
+                                    height="15"> Frankrijk</a>
+                            <a class="dropdown-item" data-select-country="ch">
+                                <img src="https://flagcdn.com/ch.svg" class="dropdown-item-image" width="20"
+                                    height="15"> Zwitserland</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="" class="inputlocation inputer" id="location">
+                </div>
+                <textarea name="inputdescription" id="inputdescription" class="inputdescription inputer"
+                    placeholder=""></textarea>
+            </div>
+            <div class="text-left">
+                <p>p.p. vanaf*</p>
+                <input type="text" name="inputprijs" id="inputpijs" class="inputpijs inputer" placeholder="€429,-">
+                <h4>sport: <input type="text" name="inputsport" id="inputsport" class="input inputer" placeholder="">
+                </h4>
+                <h4>mensen: <input type="text" name="inputmensen" id="inputmensen" class="input inputer" placeholder="">
+                </h4>
+                <h4>transport: <input type="text" name="inputauto" id="inputauto" class="input inputer" placeholder="">
+                </h4><button>book</button>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
