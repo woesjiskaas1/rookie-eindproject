@@ -115,9 +115,13 @@ async function jsonOphalen() {
         );
 }
 function store(data) {
-    const local = JSON.parse(localStorage.getItem("item"));
+    let local = JSON.parse(localStorage.getItem("item"))
     let mensen = isNaN(parseInt(document.querySelector(".rangeInputNumber").value)) ? 2 : parseInt(document.querySelector(".rangeInputNumber").value)
-
+    if (JSON.parse(localStorage.getItem("item")) == null) {
+        localStorage.setItem("item", JSON.stringify(data.store))
+        local = data.store
+        console.log(local);
+    }
     console.log(mensen);
 
     console.log(filter);
@@ -262,8 +266,6 @@ function addingToShoppingCard(data) {
     booking(data)
 }
 function booking(data) {
-
-
     const shoppingcontainer = document.querySelector(".winkelwagenInhoud")
     const maincard = document.createElement("div")
     maincard.classList.add("cardWagen")

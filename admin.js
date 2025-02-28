@@ -368,12 +368,22 @@ function readjson() {
     fetch("web.json")
         .then((data) => data.json())
         .then((data) => {
-            localStorage.setItem("item", JSON.stringify(data.store))
+            localStorage.setItem("item", JSON.stringify(data.store));
+            const container = document.querySelector("body > div.main-container > div.products > div:nth-child(2) > table > tbody");
+                while (container.firstChild) {
+                    container.removeChild(container.lastChild);
+                    if (container.lastChild.firstChild === null) {
+                        showingproducts()
+                        break
+                        
+                    }
+                }
         })
         .catch(error => console.error(error), console.log(`error`),
         );
 }
 function remove(data) {
+
     const localdata = JSON.parse(localStorage.getItem("item"))
     for (const key in localdata) {
         if (Object.prototype.hasOwnProperty.call(localdata, key)) {
@@ -382,11 +392,27 @@ function remove(data) {
                 const index = localdata.indexOf(element);
                 if (index > -1) { // only splice array when item is found
                     localdata.splice(index, 1); // 2nd parameter means remove one item only
+                    localStorage.setItem("item", JSON.stringify(localdata))
                 }
-                localStorage.setItem("item", JSON.stringify(localdata))
+                const container = document.querySelector("body > div.main-container > div.products > div:nth-child(2) > table > tbody");
+                while (container.firstChild) {
+                    container.removeChild(container.lastChild);
+                    if (container.lastChild.firstChild === null) {
+                        showingproducts()
+                        break
+                        
+                    }
+                }
                 break
-
             }
+
         }
     }
+
 }
+document.getElementById("store").addEventListener("click", () => {
+    window.location.href = "shop.html";
+})
+document.getElementById("home").addEventListener("click", () => {
+    window.location.href = "index.html";
+})

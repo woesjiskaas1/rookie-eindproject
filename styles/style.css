@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
-
+    overflow-x: clip;
 }
 
 .hero-image {
@@ -196,3 +196,159 @@ button {
 	border-radius: 10px;
 	margin-top: 5px;
 }
+/* --------------------------shopping cart--------------------------- */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(228, 228, 228, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+  
+    .cardWagen-center {
+      margin: 0px
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+  
+    .cardWagen-center {
+  
+      margin: 0px;
+    }
+  
+  }
+  
+  .winkelwagenInhoud {
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .winkelwageninhoud-order {
+    margin-bottom: 30%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .bestel-button {
+    background-color: #04AA6D;
+    margin-top: 15px;
+    padding: 15px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  .bestel-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 102, 29);
+  }
+  .sidenav>h1 {
+    margin-top: -55px
+  }
+  
+  .cardWagen {
+    font-size: 12.5px;
+    width: 90%;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-evenly
+  }
+  
+  .cardWagen-left>div>p {
+    margin-left: 5px;
+  }
+  
+  .cardWagen-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cardWagen-left>div>img {
+    width: 12px;
+    height: 10px;
+  }
+  
+  .cardWagen-left>div {
+    margin-top: -15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .cardWagen-center {
+    margin: 0 7px 0 7px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardWagen-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardWagen-right>a {
+    color: red;
+  }
+  
+  .cardWagen-right>a:hover {
+    color: rgb(100, 0, 0);
+  }
+  
+  .text-left>button:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1px black;
+  }
+  
+  .text-left>button {
+    transition: all 0.2s ease-in-out;
+  }
