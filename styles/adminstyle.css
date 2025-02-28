@@ -17,6 +17,8 @@
 
 .middle>button {
     transition: 0.5s all ease-in-out;
+    background-color: #1C8ADB;
+    color: white;
 }
 
 .middle>button:hover {

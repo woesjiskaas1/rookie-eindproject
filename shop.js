@@ -1,8 +1,8 @@
 const filter = [];
 const prijzenfilter = [];
 const checkboxes = document.querySelectorAll("input[type=checkbox]");
-const filterselect = document.querySelectorAll("#filterarrow");
-const filterform = document.querySelectorAll("#filterform");
+const filterselect = document.querySelectorAll(".filterarrow");
+const filterform = document.querySelectorAll(".filterform");
 const filterbutton = document.querySelectorAll("#filterbutton");
 const container = document.querySelector(".store");
 const filterlist = [filterselect, filterform, filterbutton];
